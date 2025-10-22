@@ -846,8 +846,8 @@ if isAlt(PLAYER.UserId) == true then
     local Cursor = Instance.new("Frame")
 
 		Background.Name = "Background"
-		Background.BorderColor3 = Color3.new(0.105882, 0.164706, 0.207843)
-		Background.BackgroundColor3 = Color3.new(1, 1, 1)
+		Background.BorderColor3 = Color3.new(0, 0, 0)
+		Background.BackgroundColor3 = Color3.new(0, 0, 0)
 		Background.Size = UDim2.new(1, 0, 1, 0)
 		Background.Parent = AltGui
 		BackgroundGdt.Name = "BackgroundGdt"
@@ -855,9 +855,9 @@ if isAlt(PLAYER.UserId) == true then
 		BackgroundGdt.Rotation = 290
 		BackgroundGdt.Parent = Background
 		Info.Name = "Info"
-		Info.BorderColor3 = Color3.new(0.105882, 0.164706, 0.207843)
+		Info.BorderColor3 = Color3.new(0, 0, 0)
 		Info.AnchorPoint = Vector2.new(0.5, 0.5)
-		Info.BackgroundTransparency = 0.949999988079071
+		Info.BackgroundTransparency = 0
 		Info.Position = UDim2.new(0.5, 0, 0.4, 0)
 		Info.BackgroundColor3 = Color3.new(1, 1, 1)
 		Info.Size = UDim2.new(0.5625, 0, 0.5235, 0)
@@ -872,7 +872,7 @@ if isAlt(PLAYER.UserId) == true then
 		DisplayName.Text = "Display Name"
 		DisplayName.TextSize = 14
 		DisplayName.Font = Enum.Font.SourceSans
-		DisplayName.BackgroundTransparency = 1
+		DisplayName.BackgroundTransparency = 0
 		DisplayName.Position = UDim2.new(0, 0, 0.05, 0)
 		DisplayName.TextScaled = true
 		DisplayName.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -3782,7 +3782,7 @@ end)
     -- Add a UIStroke to the button
     local uistroke = Instance.new("UIStroke", removeButton)
     uistroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border  -- Apply stroke to the border
-    uistroke.Color = Color3.fromRGB(50, 50, 50)  -- Stroke color (dark gray)
+    uistroke.Color = Color3.fromRGB(0, 255, 0)  -- Stroke color (dark gray)
     
     
     -- Adding buttons with the same style
