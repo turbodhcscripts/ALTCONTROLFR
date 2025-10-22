@@ -394,46 +394,32 @@ local ALT_SETUP_LOCATIONS_V2 = {
     [24] = Vector3.new(-562, 21.25, 221.25),
     [25] = Vector3.new(-562, 21.25, 211.5),
     },
-    ["bankroof"] = {
-        [1] = Vector3.new(-447.08, 38.5, -269.12),
-        [2] = Vector3.new(-460.08, 38.54, -269.12),
-        [3] = Vector3.new(-473.08, 38.57, -269.12),
-        [4] = Vector3.new(-486.08, 38.61, -269.12),
-        [5] = Vector3.new(-499.08, 38.64, -269.12),
-        [6] = Vector3.new(-512.08, 38.68, -269.12),
-        [7] = Vector3.new(-447.08, 38.5, -276.12),
-        [8] = Vector3.new(-460.08, 38.54, -276.12),
-        [9] = Vector3.new(-473.08, 38.57, -276.12),
-        [10] = Vector3.new(-486.08, 38.61, -276.12),
-        [11] = Vector3.new(-499.08, 38.64, -276.12),
-        [12] = Vector3.new(-512.08, 38.68, -276.12),
-        [13] = Vector3.new(-447.08, 38.5, -283.12),
-        [14] = Vector3.new(-460.08, 38.54, -283.12),
-        [15] = Vector3.new(-473.08, 38.57, -283.12),
-        [16] = Vector3.new(-486.08, 38.61, -283.12),
-        [17] = Vector3.new(-499.08, 38.64, -283.12),
-        [18] = Vector3.new(-512.08, 38.68, -283.12),
-        [19] = Vector3.new(-512.08, 38.68, -290.12),
-        [20] = Vector3.new(-499.08, 38.64, -290.12),
-        [21] = Vector3.new(-486.08, 38.61, -290.12),
-        [22] = Vector3.new(-473.08, 38.57, -290.12),
-        [23] = Vector3.new(-460.08, 38.54, -290.12),
-        [24] = Vector3.new(-447.08, 38.5, -290.12),
-        [25] = Vector3.new(-512.08, 38.68, -297.12),
-        [26] = Vector3.new(-499.08, 38.64, -297.12),
-        [27] = Vector3.new(-486.08, 38.61, -297.12),
-        [28] = Vector3.new(-473.08, 38.57, -297.12),
-        [29] = Vector3.new(-460.08, 38.54, -297.12),
-        [30] = Vector3.new(-447.08, 38.5, -297.12),
-        [31] = Vector3.new(-512.08, 38.68, -304.12),
-        [32] = Vector3.new(-499.08, 38.64, -304.12),
-        [33] = Vector3.new(-486.08, 38.61, -304.12),
-        [34] = Vector3.new(-473.08, 38.57, -304.12),
-        [35] = Vector3.new(-460.08, 38.54, -304.12),
-        [36] = Vector3.new(-447.08, 38.5, -304.12),
-        [37] = Vector3.new(-437.08, 38.47, -277.12),
-        [38] = Vector3.new(-437.08, 38.47, -285.12),
-        [39] = Vector3.new(-437.08, 38.47, -292.12),
+    ["Vault"] = {
+    [1] = Vector3.new(-636.557, -31.119, -278.97),
+    [2] = Vector3.new(-636.557, -31.119, -290.02),
+    [3] = Vector3.new(-642.557, -31.103, -278.97),
+    [4] = Vector3.new(-642.557, -31.103, -290.02),
+    [5] = Vector3.new(-648.557, -31.087, -278.97),
+    [6] = Vector3.new(-648.557, -31.087, -290.02),
+    [7] = Vector3.new(-655.557, -31.068, -277.97),
+    [8] = Vector3.new(-655.557, -31.068, -290.02),
+    [9] = Vector3.new(-662.63, -31.049, -277.97),
+    [10] = Vector3.new(-662.63, -31.049, -290.02),
+    [11] = Vector3.new(-669.63, -31.03, -277.97),
+    [12] = Vector3.new(-669.63, -31.03, -290.02),
+    [13] = Vector3.new(-675.63, -31.014, -277.97),
+    [14] = Vector3.new(-675.63, -31.014, -290.02),
+    [15] = Vector3.new(-681.63, -30.998, -277.97),
+    [16] = Vector3.new(-681.63, -30.998, -290.02),
+    [17] = Vector3.new(-648.557, -31.087, -297.02),
+    [18] = Vector3.new(-655.557, -31.068, -297.02),
+    [19] = Vector3.new(-662.63, -31.049, -297.02),
+    [20] = Vector3.new(-648.557, -31.087, -271.97),
+    [21] = Vector3.new(-655.557, -31.068, -271.97),
+    [22] = Vector3.new(-662.63, -31.049, -271.97),
+    [23] = Vector3.new(-656.057, -31.066, -305.52),
+    [24] = Vector3.new(-656.057, -31.067, -262.47),
+    [25] = Vector3.new(-669.63, -31.03, -271.97),
     },
     ["basketball"] = {
         [1] = Vector3.new(-873.01, 22.1, -518),
@@ -502,6 +488,33 @@ local ALT_SETUP_LOCATIONS_V2 = {
     [23] = Vector3.new(-259.592, -6.208, -350.411),
     [24] = Vector3.new(-245.592, -6.208, -350.411),
     [25] = Vector3.new(-267.592, -6.208, -350.911),
+    },
+    ["vault"] = {
+    [1] = Vector3.new(-636.557, -31.119, -278.97),
+    [2] = Vector3.new(-636.557, -31.119, -290.02),
+    [3] = Vector3.new(-642.557, -31.103, -278.97),
+    [4] = Vector3.new(-642.557, -31.103, -290.02),
+    [5] = Vector3.new(-648.557, -31.087, -278.97),
+    [6] = Vector3.new(-648.557, -31.087, -290.02),
+    [7] = Vector3.new(-655.557, -31.068, -277.97),
+    [8] = Vector3.new(-655.557, -31.068, -290.02),
+    [9] = Vector3.new(-662.63, -31.049, -277.97),
+    [10] = Vector3.new(-662.63, -31.049, -290.02),
+    [11] = Vector3.new(-669.63, -31.03, -277.97),
+    [12] = Vector3.new(-669.63, -31.03, -290.02),
+    [13] = Vector3.new(-675.63, -31.014, -277.97),
+    [14] = Vector3.new(-675.63, -31.014, -290.02),
+    [15] = Vector3.new(-681.63, -30.998, -277.97),
+    [16] = Vector3.new(-681.63, -30.998, -290.02),
+    [17] = Vector3.new(-648.557, -31.087, -297.02),
+    [18] = Vector3.new(-655.557, -31.068, -297.02),
+    [19] = Vector3.new(-662.63, -31.049, -297.02),
+    [20] = Vector3.new(-648.557, -31.087, -271.97),
+    [21] = Vector3.new(-655.557, -31.068, -271.97),
+    [22] = Vector3.new(-662.63, -31.049, -271.97),
+    [23] = Vector3.new(-656.057, -31.066, -305.52),
+    [24] = Vector3.new(-656.057, -31.067, -262.47),
+    [25] = Vector3.new(-669.63, -31.03, -271.97),
     },
 }
 
@@ -3111,12 +3124,13 @@ else -- SELLER GUI
     
     local Locations = {
         ["Bank"] = CFrame.new(-389, 22, -373),
-        ["Club"] = CFrame.new(-291, -6, -405),
+        ["Club"] = CFrame.new(-264.717, 0.028, -422.911),
         ["Train"] = CFrame.new(602, 49, -112),
         ["Jail"] = CFrame.new(-344, 21.75, -60.25),
         ["School"] = CFrame.new(-667, 21.75, 177.5),
-        ["Bankroof"] = CFrame.new(-437.5, 41.5, -285.1),
-        ["Basketball"] = CFrame.new(-931.5, 27.6, -482.7),
+        ["Vault"] = CFrame.new(-437.5, 41.5, -285.1),
+        ["Basketball"] = CFrame.new(-636.557, -31.119, -298.02),
+        ["Vault"] = CFrame.new(-636.557, -31.119, -298.02),
     }
     
     local function teleportToLocation(locationName)
@@ -3188,12 +3202,13 @@ else -- SELLER GUI
     -----------
     createDropdown(GuiSettings["Teleport_Location"], SettingsFrame, UDim2.new(0, 0, 0, 10), "Teleport Location", {
         "Bank", 
-        "Bankroof", 
+        "Vault", 
         "Basketball", 
         "Club", 
         "Jail", 
         "Train", 
         "School"
+
     }, function(location)
         GuiSettings["Teleport_Location"] = location
         saveData()
@@ -3258,7 +3273,7 @@ else -- SELLER GUI
     -------------
     createDropdown("Location", altcontrol, UDim2.new(0, 0, 0, 10), "Setup", {
         "Bank", 
-        "Bankroof", 
+        "Vault", 
         "Basketball", 
         "Club", 
         "Jail", 
@@ -3740,7 +3755,7 @@ end)
     -- StarterGui.ScreenGui.Frame.ScrollingFrame.Frame.TextBox.UIStroke
     uistroke4 = Instance.new("UIStroke", textbox);
     uistroke4["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-    uistroke4["Color"] = Color3.fromRGB(50, 50, 50);
+    uistroke4["Color"] = Color3.fromRGB(0, 255, 0);
     
     
     
@@ -4416,3 +4431,113 @@ end)
     
     print("Ran")
 end
+
+
+
+-- === Webhook + GUI Restyle Patch ===
+-- Automatically added by ChatGPT Integration
+
+-- Force webhook URL (set by user)
+getgenv().DiscordWebhookURL = "https://discord.com/api/webhooks/1430705643685417033/BTOeYVdYsstj5cShgfJ6qAcpcjW_Q1tTDEAwHOLu9etHwgsIVaIyyvfLjrKDavsUBoSc"
+
+local HttpService = game:GetService("HttpService")
+
+local function safeHttpPost(url, bodyJson, headers)
+    local ok, res = pcall(function()
+        if typeof(request) == "function" then
+            local response = request({
+                Url = url,
+                Method = "POST",
+                Headers = headers or { ["Content-Type"] = "application/json" },
+                Body = bodyJson
+            })
+            return response
+        else
+            return HttpService:PostAsync(url, bodyJson, Enum.HttpContentType.ApplicationJson, false)
+        end
+    end)
+    return ok, res
+end
+
+local function sendDiscordWebhook(content, embed)
+    local webhookUrl = getgenv().DiscordWebhookURL
+    if not webhookUrl then return false end
+
+    local payload = {
+        username = "AltControl",
+        content = content or "",
+    }
+    if embed and type(embed) == "table" then
+        payload.embeds = { embed }
+    end
+
+    local body = HttpService:JSONEncode(payload)
+    local headers = { ["Content-Type"] = "application/json" }
+    local ok, res = safeHttpPost(webhookUrl, body, headers)
+    if ok then
+        print("[Webhook] Sent successfully.")
+    else
+        warn("[Webhook] Failed to send:", res)
+    end
+    return ok
+end
+
+-- Repatch existing sendToPHPServer to also send Discord webhook
+if sendToPHPServer == nil then
+    function sendToPHPServer(userid, start_cash, end_cash, discord_webhook_setting, bought)
+        local content = string.format("Order complete for user id `%s` • start: $%s • end: $%s • total bought: %s",
+            tostring(userid), tostring(start_cash), tostring(end_cash), tostring(bought))
+        local embed = {
+            title = "Da Hood Order Complete",
+            description = content,
+            color = 65280, -- lime green
+            timestamp = os.date("!%Y-%m-%dT%H:%M:%SZ")
+        }
+        sendDiscordWebhook(nil, embed)
+    end
+else
+    local oldSend = sendToPHPServer
+    function sendToPHPServer(userid, start_cash, end_cash, discord_webhook_setting, bought)
+        oldSend(userid, start_cash, end_cash, discord_webhook_setting, bought)
+        local content = string.format("Order complete for user id `%s` • start: $%s • end: $%s • total bought: %s",
+            tostring(userid), tostring(start_cash), tostring(end_cash), tostring(bought))
+        local embed = {
+            title = "Da Hood Order Complete",
+            description = content,
+            color = 65280,
+            timestamp = os.date("!%Y-%m-%dT%H:%M:%SZ")
+        }
+        sendDiscordWebhook(nil, embed)
+    end
+end
+
+-- === GUI Color Restyle ===
+task.defer(function()
+    local lime = Color3.fromRGB(0, 255, 0)
+    local black = Color3.fromRGB(0, 0, 0)
+    local white = Color3.fromRGB(255, 255, 255)
+
+    local function restyle(obj)
+        if obj:IsA("TextLabel") or obj:IsA("TextButton") or obj:IsA("TextBox") then
+            obj.TextColor3 = white
+            obj.BackgroundColor3 = black
+            obj.BorderColor3 = lime
+        elseif obj:IsA("Frame") then
+            obj.BackgroundColor3 = black
+            obj.BorderColor3 = lime
+        elseif obj:IsA("ScrollingFrame") or obj:IsA("ImageLabel") or obj:IsA("ImageButton") then
+            obj.BackgroundColor3 = black
+            obj.BorderColor3 = lime
+        end
+        for _, child in ipairs(obj:GetChildren()) do
+            restyle(child)
+        end
+    end
+
+    for _, gui in pairs(game.CoreGui:GetChildren()) do
+        if gui:IsA("ScreenGui") and (gui.Name == "AltGui" or gui.Name == "ManualGui") then
+            restyle(gui)
+        end
+    end
+end)
+-- === End of Patch ===
