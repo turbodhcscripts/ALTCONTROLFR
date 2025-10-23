@@ -3200,7 +3200,7 @@ else -- SELLER GUI
     -- settings
     -----------
     -----------
-    createDropdown(GuiSettings["🌌Teleport_Location"], SettingsFrame, UDim2.new(0, 0, 0, 10), "🌌Teleport Location", {
+    createDropdown(GuiSettings["Teleport_Location"], SettingsFrame, UDim2.new(0, 0, 0, 10), "Teleport Location", {
         "🏛️Bank", 
         "🔒Vault", 
         "🏀Basketball", 
