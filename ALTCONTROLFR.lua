@@ -4479,53 +4479,36 @@ else
 end
 -- === End Reliable Webhook Integration ===
 
-
-
--- === Advanced GUI Color Theme Patch ===
--- Alt Control GUI: Blue + Black + White
--- Selling GUI: Lime + Black + White
-
+-- === Alt Control GUI Recolor (Blue, Black, White) ===
 task.defer(function()
-    local lime = Color3.fromRGB(0, 255, 0)
     local blue = Color3.fromRGB(0, 170, 255)
     local black = Color3.fromRGB(0, 0, 0)
     local white = Color3.fromRGB(255, 255, 255)
 
-    local function restyle(obj, accent)
+    local function restyle(obj)
         if obj:IsA("TextLabel") or obj:IsA("TextButton") or obj:IsA("TextBox") then
             obj.TextColor3 = white
             obj.BackgroundColor3 = black
-            obj.BorderColor3 = accent
+            obj.BorderColor3 = blue
         elseif obj:IsA("Frame") or obj:IsA("ScrollingFrame") or obj:IsA("ImageLabel") or obj:IsA("ImageButton") then
             obj.BackgroundColor3 = black
-            obj.BorderColor3 = accent
+            obj.BorderColor3 = blue
         end
         for _, child in ipairs(obj:GetChildren()) do
-            restyle(child, accent)
+            restyle(child)
         end
     end
 
-    -- Target GUIs for recolor
     for _, gui in pairs(game.CoreGui:GetChildren()) do
-        if gui:IsA("ScreenGui") then
-            local nameLower = gui.Name:lower()
-            if string.find(nameLower, "alt") then
-                restyle(gui, blue)
-            elseif string.find(nameLower, "sell") or string.find(nameLower, "shop") then
-                restyle(gui, lime)
-            end
+        if gui:IsA("ScreenGui") and string.find(gui.Name:lower(), "alt") then
+            restyle(gui)
         end
     end
 
     for _, gui in pairs(game.Players.LocalPlayer:WaitForChild("PlayerGui"):GetChildren()) do
-        if gui:IsA("ScreenGui") then
-            local nameLower = gui.Name:lower()
-            if string.find(nameLower, "alt") then
-                restyle(gui, blue)
-            elseif string.find(nameLower, "sell") or string.find(nameLower, "shop") then
-                restyle(gui, lime)
-            end
+        if gui:IsA("ScreenGui") and string.find(gui.Name:lower(), "alt") then
+            restyle(gui)
         end
     end
 end)
--- === End Advanced GUI Color Theme Patch ===
+-- === End Alt Control GUI Recolor ===
