@@ -1673,7 +1673,7 @@ if isAlt(PLAYER.UserId) == true then
                             v.Decal:Destroy()
                         end
                         v.BillboardGui.Enabled = false
-                        v.Transparency = 1
+                        v.Transparency = 0
                     end
                 end
             else
@@ -1860,7 +1860,7 @@ if isAlt(PLAYER.UserId) == true then
     --altCommands.setup(nil, {"bank"})
 
     --Optimise
-    setfpscap(4)
+    setfpscap(3)
     RunService:Set3dRenderingEnabled(false)
     --RunService:setThrottleFramerateEnabled(true)
     Lighting.GlobalShadows = false
@@ -2074,7 +2074,7 @@ else -- SELLER GUI
     -- Create the frame
     G2L["2"] = Instance.new("Frame", G2L["1"])
     G2L["2"]["BorderSizePixel"] = 0
-    G2L["2"]["BackgroundColor3"] = Color3.fromRGB(70, 70, 70)
+    G2L["2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
     G2L["2"]["Size"] = UDim2.new(0, 520, 0, 296)
     G2L["2"]["Position"] = UDim2.new(0.12741, 0, 0.29397, 0)
     G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
@@ -2085,10 +2085,10 @@ else -- SELLER GUI
     sideFrame.Name = "sideFrame"  -- Name the inner frame "sideFrame"
     sideFrame.Size = UDim2.new(0, 130, 0, 296)  -- Size {0, 100}, {0, 300}
     sideFrame.Position = UDim2.new(0, 0, 0, 0)  -- Position it inside the parent frame (G2L["2"])
-    sideFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)  -- Set a different background color to distinguish it
+    sideFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Set a different background color to distinguish it
     sideFrame.BorderSizePixel = 0  -- Remove the border
     sideFrame.ZIndex = 2  -- Set a higher ZIndex for sideFrame to appear above the parent
-    sideFrame.BackgroundTransparency = 0.5
+    sideFrame.BackgroundTransparency = 0.3
     
     
     -- Add rounded corners to sideFrame using UICorner
