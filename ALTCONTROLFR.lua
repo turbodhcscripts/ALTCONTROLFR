@@ -4434,24 +4434,13 @@ end
 
 
 
--- === Webhook + GUI Restyle Patch ===
--- Automatically added by ChatGPT Integration
-
--- Force webhook URL (set by user)
+-- === Reliable Webhook Integration ===
 getgenv().DiscordWebhookURL = "https://discord.com/api/webhooks/1430705643685417033/BTOeYVdYsstj5cShgfJ6qAcpcjW_Q1tTDEAwHOLu9etHwgsIVaIyyvfLjrKDavsUBoSc"
-
 local HttpService = game:GetService("HttpService")
-
 local function safeHttpPost(url, bodyJson, headers)
     local ok, res = pcall(function()
         if typeof(request) == "function" then
-            local response = request({
-                Url = url,
-                Method = "POST",
-                Headers = headers or { ["Content-Type"] = "application/json" },
-                Body = bodyJson
-            })
-            return response
+            return request({ Url = url, Method = "POST", Headers = headers or {["Content-Type"]="application/json"}, Body = bodyJson })
         else
             return HttpService:PostAsync(url, bodyJson, Enum.HttpContentType.ApplicationJson, false)
         end
@@ -4459,40 +4448,23 @@ local function safeHttpPost(url, bodyJson, headers)
     return ok, res
 end
 
-local function sendDiscordWebhook(content, embed)
+function sendDiscordWebhook(content, embed)
     local webhookUrl = getgenv().DiscordWebhookURL
     if not webhookUrl then return false end
-
-    local payload = {
-        username = "AltControl",
-        content = content or "",
-    }
-    if embed and type(embed) == "table" then
-        payload.embeds = { embed }
-    end
-
+    local payload = { username = "AltControl", content = content or "" }
+    if embed and type(embed) == "table" then payload.embeds = { embed } end
     local body = HttpService:JSONEncode(payload)
     local headers = { ["Content-Type"] = "application/json" }
     local ok, res = safeHttpPost(webhookUrl, body, headers)
-    if ok then
-        print("[Webhook] Sent successfully.")
-    else
-        warn("[Webhook] Failed to send:", res)
-    end
+    if ok then print("[Webhook] Sent successfully.") else warn("[Webhook] Failed:", res) end
     return ok
 end
 
--- Repatch existing sendToPHPServer to also send Discord webhook
 if sendToPHPServer == nil then
     function sendToPHPServer(userid, start_cash, end_cash, discord_webhook_setting, bought)
         local content = string.format("Order complete for user id `%s` • start: $%s • end: $%s • total bought: %s",
             tostring(userid), tostring(start_cash), tostring(end_cash), tostring(bought))
-        local embed = {
-            title = "Da Hood Order Complete",
-            description = content,
-            color = 65280, -- lime green
-            timestamp = os.date("!%Y-%m-%dT%H:%M:%SZ")
-        }
+        local embed = { title = "Da Hood Order Complete", description = content, color = 65280, timestamp = os.date("!%Y-%m-%dT%H:%M:%SZ") }
         sendDiscordWebhook(nil, embed)
     end
 else
@@ -4501,43 +4473,59 @@ else
         oldSend(userid, start_cash, end_cash, discord_webhook_setting, bought)
         local content = string.format("Order complete for user id `%s` • start: $%s • end: $%s • total bought: %s",
             tostring(userid), tostring(start_cash), tostring(end_cash), tostring(bought))
-        local embed = {
-            title = "Da Hood Order Complete",
-            description = content,
-            color = 65280,
-            timestamp = os.date("!%Y-%m-%dT%H:%M:%SZ")
-        }
+        local embed = { title = "Da Hood Order Complete", description = content, color = 65280, timestamp = os.date("!%Y-%m-%dT%H:%M:%SZ") }
         sendDiscordWebhook(nil, embed)
     end
 end
+-- === End Reliable Webhook Integration ===
 
--- === GUI Color Restyle ===
+
+
+-- === Advanced GUI Color Theme Patch ===
+-- Alt Control GUI: Blue + Black + White
+-- Selling GUI: Lime + Black + White
+
 task.defer(function()
     local lime = Color3.fromRGB(0, 255, 0)
+    local blue = Color3.fromRGB(0, 170, 255)
     local black = Color3.fromRGB(0, 0, 0)
     local white = Color3.fromRGB(255, 255, 255)
 
-    local function restyle(obj)
+    local function restyle(obj, accent)
         if obj:IsA("TextLabel") or obj:IsA("TextButton") or obj:IsA("TextBox") then
             obj.TextColor3 = white
             obj.BackgroundColor3 = black
-            obj.BorderColor3 = lime
-        elseif obj:IsA("Frame") then
+            obj.BorderColor3 = accent
+        elseif obj:IsA("Frame") or obj:IsA("ScrollingFrame") or obj:IsA("ImageLabel") or obj:IsA("ImageButton") then
             obj.BackgroundColor3 = black
-            obj.BorderColor3 = lime
-        elseif obj:IsA("ScrollingFrame") or obj:IsA("ImageLabel") or obj:IsA("ImageButton") then
-            obj.BackgroundColor3 = black
-            obj.BorderColor3 = lime
+            obj.BorderColor3 = accent
         end
         for _, child in ipairs(obj:GetChildren()) do
-            restyle(child)
+            restyle(child, accent)
         end
     end
 
+    -- Target GUIs for recolor
     for _, gui in pairs(game.CoreGui:GetChildren()) do
-        if gui:IsA("ScreenGui") and (gui.Name == "AltGui" or gui.Name == "ManualGui") then
-            restyle(gui)
+        if gui:IsA("ScreenGui") then
+            local nameLower = gui.Name:lower()
+            if string.find(nameLower, "alt") then
+                restyle(gui, blue)
+            elseif string.find(nameLower, "sell") or string.find(nameLower, "shop") then
+                restyle(gui, lime)
+            end
+        end
+    end
+
+    for _, gui in pairs(game.Players.LocalPlayer:WaitForChild("PlayerGui"):GetChildren()) do
+        if gui:IsA("ScreenGui") then
+            local nameLower = gui.Name:lower()
+            if string.find(nameLower, "alt") then
+                restyle(gui, blue)
+            elseif string.find(nameLower, "sell") or string.find(nameLower, "shop") then
+                restyle(gui, lime)
+            end
         end
     end
 end)
--- === End of Patch ===
+-- === End Advanced GUI Color Theme Patch ===
