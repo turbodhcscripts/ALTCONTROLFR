@@ -2085,10 +2085,10 @@ else -- SELLER GUI
     sideFrame.Name = "sideFrame"  -- Name the inner frame "sideFrame"
     sideFrame.Size = UDim2.new(0, 130, 0, 296)  -- Size {0, 100}, {0, 300}
     sideFrame.Position = UDim2.new(0, 0, 0, 0)  -- Position it inside the parent frame (G2L["2"])
-    sideFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Set a different background color to distinguish it
+    sideFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 255)  -- Set a different background color to distinguish it
     sideFrame.BorderSizePixel = 0  -- Remove the border
     sideFrame.ZIndex = 2  -- Set a higher ZIndex for sideFrame to appear above the parent
-    sideFrame.BackgroundTransparency = 0.3
+    sideFrame.BackgroundTransparency = 0.1
     
     
     -- Add rounded corners to sideFrame using UICorner
@@ -3200,14 +3200,14 @@ else -- SELLER GUI
     -- settings
     -----------
     -----------
-    createDropdown(GuiSettings["Teleport_Location"], SettingsFrame, UDim2.new(0, 0, 0, 10), "Teleport Location", {
-        "Bank", 
-        "Vault", 
-        "Basketball", 
-        "Club", 
-        "Jail", 
-        "Train", 
-        "School"
+    createDropdown(GuiSettings["🌌Teleport_Location"], SettingsFrame, UDim2.new(0, 0, 0, 10), "🌌Teleport Location", {
+        "🏛️Bank", 
+        "🔒Vault", 
+        "🏀Basketball", 
+        "🌃Club", 
+        "👮Jail", 
+        "🚂Train", 
+        "🏫School"
 
     }, function(location)
         GuiSettings["Teleport_Location"] = location
