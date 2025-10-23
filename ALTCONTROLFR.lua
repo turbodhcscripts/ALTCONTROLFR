@@ -3201,13 +3201,13 @@ else -- SELLER GUI
     -----------
     -----------
     createDropdown(GuiSettings["Teleport_Location"], SettingsFrame, UDim2.new(0, 0, 0, 10), "Teleport Location", {
-        "🏛️Bank", 
-        "🔒Vault", 
-        "🏀Basketball", 
-        "🌃Club", 
-        "👮Jail", 
-        "🚂Train", 
-        "🏫School"
+        "Bank", 
+        "Vault", 
+        "Basketball", 
+        "Club", 
+        "Jail", 
+        "Train", 
+        "School"
 
     }, function(location)
         GuiSettings["Teleport_Location"] = location
