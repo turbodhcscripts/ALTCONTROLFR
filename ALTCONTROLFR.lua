@@ -394,32 +394,46 @@ local ALT_SETUP_LOCATIONS_V2 = {
     [24] = Vector3.new(-562, 21.25, 221.25),
     [25] = Vector3.new(-562, 21.25, 211.5),
     },
-    ["Vault"] = {
-    [1] = Vector3.new(-636.557, -31.119, -278.97),
-    [2] = Vector3.new(-636.557, -31.119, -290.02),
-    [3] = Vector3.new(-642.557, -31.103, -278.97),
-    [4] = Vector3.new(-642.557, -31.103, -290.02),
-    [5] = Vector3.new(-648.557, -31.087, -278.97),
-    [6] = Vector3.new(-648.557, -31.087, -290.02),
-    [7] = Vector3.new(-655.557, -31.068, -277.97),
-    [8] = Vector3.new(-655.557, -31.068, -290.02),
-    [9] = Vector3.new(-662.63, -31.049, -277.97),
-    [10] = Vector3.new(-662.63, -31.049, -290.02),
-    [11] = Vector3.new(-669.63, -31.03, -277.97),
-    [12] = Vector3.new(-669.63, -31.03, -290.02),
-    [13] = Vector3.new(-675.63, -31.014, -277.97),
-    [14] = Vector3.new(-675.63, -31.014, -290.02),
-    [15] = Vector3.new(-681.63, -30.998, -277.97),
-    [16] = Vector3.new(-681.63, -30.998, -290.02),
-    [17] = Vector3.new(-648.557, -31.087, -297.02),
-    [18] = Vector3.new(-655.557, -31.068, -297.02),
-    [19] = Vector3.new(-662.63, -31.049, -297.02),
-    [20] = Vector3.new(-648.557, -31.087, -271.97),
-    [21] = Vector3.new(-655.557, -31.068, -271.97),
-    [22] = Vector3.new(-662.63, -31.049, -271.97),
-    [23] = Vector3.new(-656.057, -31.066, -305.52),
-    [24] = Vector3.new(-656.057, -31.067, -262.47),
-    [25] = Vector3.new(-669.63, -31.03, -271.97),
+    ["bankroof"] = {
+        [1] = Vector3.new(-447.08, 38.5, -269.12),
+        [2] = Vector3.new(-460.08, 38.54, -269.12),
+        [3] = Vector3.new(-473.08, 38.57, -269.12),
+        [4] = Vector3.new(-486.08, 38.61, -269.12),
+        [5] = Vector3.new(-499.08, 38.64, -269.12),
+        [6] = Vector3.new(-512.08, 38.68, -269.12),
+        [7] = Vector3.new(-447.08, 38.5, -276.12),
+        [8] = Vector3.new(-460.08, 38.54, -276.12),
+        [9] = Vector3.new(-473.08, 38.57, -276.12),
+        [10] = Vector3.new(-486.08, 38.61, -276.12),
+        [11] = Vector3.new(-499.08, 38.64, -276.12),
+        [12] = Vector3.new(-512.08, 38.68, -276.12),
+        [13] = Vector3.new(-447.08, 38.5, -283.12),
+        [14] = Vector3.new(-460.08, 38.54, -283.12),
+        [15] = Vector3.new(-473.08, 38.57, -283.12),
+        [16] = Vector3.new(-486.08, 38.61, -283.12),
+        [17] = Vector3.new(-499.08, 38.64, -283.12),
+        [18] = Vector3.new(-512.08, 38.68, -283.12),
+        [19] = Vector3.new(-512.08, 38.68, -290.12),
+        [20] = Vector3.new(-499.08, 38.64, -290.12),
+        [21] = Vector3.new(-486.08, 38.61, -290.12),
+        [22] = Vector3.new(-473.08, 38.57, -290.12),
+        [23] = Vector3.new(-460.08, 38.54, -290.12),
+        [24] = Vector3.new(-447.08, 38.5, -290.12),
+        [25] = Vector3.new(-512.08, 38.68, -297.12),
+        [26] = Vector3.new(-499.08, 38.64, -297.12),
+        [27] = Vector3.new(-486.08, 38.61, -297.12),
+        [28] = Vector3.new(-473.08, 38.57, -297.12),
+        [29] = Vector3.new(-460.08, 38.54, -297.12),
+        [30] = Vector3.new(-447.08, 38.5, -297.12),
+        [31] = Vector3.new(-512.08, 38.68, -304.12),
+        [32] = Vector3.new(-499.08, 38.64, -304.12),
+        [33] = Vector3.new(-486.08, 38.61, -304.12),
+        [34] = Vector3.new(-473.08, 38.57, -304.12),
+        [35] = Vector3.new(-460.08, 38.54, -304.12),
+        [36] = Vector3.new(-447.08, 38.5, -304.12),
+        [37] = Vector3.new(-437.08, 38.47, -277.12),
+        [38] = Vector3.new(-437.08, 38.47, -285.12),
+        [39] = Vector3.new(-437.08, 38.47, -292.12),
     },
     ["basketball"] = {
         [1] = Vector3.new(-873.01, 22.1, -518),
@@ -488,33 +502,6 @@ local ALT_SETUP_LOCATIONS_V2 = {
     [23] = Vector3.new(-259.592, -6.208, -350.411),
     [24] = Vector3.new(-245.592, -6.208, -350.411),
     [25] = Vector3.new(-267.592, -6.208, -350.911),
-    },
-    ["vault"] = {
-    [1] = Vector3.new(-636.557, -31.119, -278.97),
-    [2] = Vector3.new(-636.557, -31.119, -290.02),
-    [3] = Vector3.new(-642.557, -31.103, -278.97),
-    [4] = Vector3.new(-642.557, -31.103, -290.02),
-    [5] = Vector3.new(-648.557, -31.087, -278.97),
-    [6] = Vector3.new(-648.557, -31.087, -290.02),
-    [7] = Vector3.new(-655.557, -31.068, -277.97),
-    [8] = Vector3.new(-655.557, -31.068, -290.02),
-    [9] = Vector3.new(-662.63, -31.049, -277.97),
-    [10] = Vector3.new(-662.63, -31.049, -290.02),
-    [11] = Vector3.new(-669.63, -31.03, -277.97),
-    [12] = Vector3.new(-669.63, -31.03, -290.02),
-    [13] = Vector3.new(-675.63, -31.014, -277.97),
-    [14] = Vector3.new(-675.63, -31.014, -290.02),
-    [15] = Vector3.new(-681.63, -30.998, -277.97),
-    [16] = Vector3.new(-681.63, -30.998, -290.02),
-    [17] = Vector3.new(-648.557, -31.087, -297.02),
-    [18] = Vector3.new(-655.557, -31.068, -297.02),
-    [19] = Vector3.new(-662.63, -31.049, -297.02),
-    [20] = Vector3.new(-648.557, -31.087, -271.97),
-    [21] = Vector3.new(-655.557, -31.068, -271.97),
-    [22] = Vector3.new(-662.63, -31.049, -271.97),
-    [23] = Vector3.new(-656.057, -31.066, -305.52),
-    [24] = Vector3.new(-656.057, -31.067, -262.47),
-    [25] = Vector3.new(-669.63, -31.03, -271.97),
     },
 }
 
@@ -1673,7 +1660,7 @@ if isAlt(PLAYER.UserId) == true then
                             v.Decal:Destroy()
                         end
                         v.BillboardGui.Enabled = false
-                        v.Transparency = 0
+                        v.Transparency = 1
                     end
                 end
             else
@@ -1860,7 +1847,7 @@ if isAlt(PLAYER.UserId) == true then
     --altCommands.setup(nil, {"bank"})
 
     --Optimise
-    setfpscap(3)
+    setfpscap(4)
     RunService:Set3dRenderingEnabled(false)
     --RunService:setThrottleFramerateEnabled(true)
     Lighting.GlobalShadows = false
@@ -2074,7 +2061,7 @@ else -- SELLER GUI
     -- Create the frame
     G2L["2"] = Instance.new("Frame", G2L["1"])
     G2L["2"]["BorderSizePixel"] = 0
-    G2L["2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+    G2L["2"]["BackgroundColor3"] = Color3.fromRGB(70, 70, 70)
     G2L["2"]["Size"] = UDim2.new(0, 520, 0, 296)
     G2L["2"]["Position"] = UDim2.new(0.12741, 0, 0.29397, 0)
     G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
@@ -2085,10 +2072,10 @@ else -- SELLER GUI
     sideFrame.Name = "sideFrame"  -- Name the inner frame "sideFrame"
     sideFrame.Size = UDim2.new(0, 130, 0, 296)  -- Size {0, 100}, {0, 300}
     sideFrame.Position = UDim2.new(0, 0, 0, 0)  -- Position it inside the parent frame (G2L["2"])
-    sideFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Set a different background color to distinguish it
+    sideFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)  -- Set a different background color to distinguish it
     sideFrame.BorderSizePixel = 0  -- Remove the border
     sideFrame.ZIndex = 2  -- Set a higher ZIndex for sideFrame to appear above the parent
-    sideFrame.BackgroundTransparency = 0.3
+    sideFrame.BackgroundTransparency = 0.5
     
     
     -- Add rounded corners to sideFrame using UICorner
@@ -3124,13 +3111,12 @@ else -- SELLER GUI
     
     local Locations = {
         ["Bank"] = CFrame.new(-389, 22, -373),
-        ["Club"] = CFrame.new(-264.717, 0.028, -422.911),
+        ["Club"] = CFrame.new(-291, -6, -405),
         ["Train"] = CFrame.new(602, 49, -112),
         ["Jail"] = CFrame.new(-344, 21.75, -60.25),
         ["School"] = CFrame.new(-667, 21.75, 177.5),
-        ["Vault"] = CFrame.new(-437.5, 41.5, -285.1),
-        ["Basketball"] = CFrame.new(-636.557, -31.119, -298.02),
-        ["Vault"] = CFrame.new(-636.557, -31.119, -298.02),
+        ["Bankroof"] = CFrame.new(-437.5, 41.5, -285.1),
+        ["Basketball"] = CFrame.new(-931.5, 27.6, -482.7),
     }
     
     local function teleportToLocation(locationName)
@@ -3202,13 +3188,12 @@ else -- SELLER GUI
     -----------
     createDropdown(GuiSettings["Teleport_Location"], SettingsFrame, UDim2.new(0, 0, 0, 10), "Teleport Location", {
         "Bank", 
-        "Vault", 
+        "Bankroof", 
         "Basketball", 
         "Club", 
         "Jail", 
         "Train", 
         "School"
-
     }, function(location)
         GuiSettings["Teleport_Location"] = location
         saveData()
@@ -3273,7 +3258,7 @@ else -- SELLER GUI
     -------------
     createDropdown("Location", altcontrol, UDim2.new(0, 0, 0, 10), "Setup", {
         "Bank", 
-        "Vault", 
+        "Bankroof", 
         "Basketball", 
         "Club", 
         "Jail", 
@@ -3755,7 +3740,7 @@ end)
     -- StarterGui.ScreenGui.Frame.ScrollingFrame.Frame.TextBox.UIStroke
     uistroke4 = Instance.new("UIStroke", textbox);
     uistroke4["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-    uistroke4["Color"] = Color3.fromRGB(0, 255, 0);
+    uistroke4["Color"] = Color3.fromRGB(50, 50, 50);
     
     
     
