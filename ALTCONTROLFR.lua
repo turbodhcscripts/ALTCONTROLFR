@@ -1535,21 +1535,33 @@ if isAlt(PLAYER.UserId) == true then
     local player2 = game.Players.LocalPlayer
     local backpack = player2.Backpack
     local character2 = player2.Character or player2.CharacterAdded:Wait() 
-    altCommands.wallet = function(player, args)
-        print(player,args)
-        for _, v in pairs(character:GetChildren()) do
-            if v:IsA("Tool") and v.Name ~= "[Wallet]" then
-                v.Parent = backpack  -- Move tools to backpack
-            end
-        end
-        
-        -- Equip/un-equip the "[Wallet]"
-        if backpack:FindFirstChild("[Wallet]") then
-            backpack["[Wallet]"].Parent = character2  -- Move the wallet to the character to equip it
-        elseif character2:FindFirstChild("[Wallet]") then
-            character2["[Wallet]"].Parent = backpack  -- Move the wallet back to the backpack to unequip it
+altCommands.wallet = function(player, args)
+    print(player, args)
+
+    local character = player.Character
+    if not character then return end
+
+    local backpack = player:FindFirstChildOfClass("Backpack")
+    if not backpack then return end
+
+    -- Move all tools (except wallet) from character to backpack
+    for _, v in pairs(character:GetChildren()) do
+        if v:IsA("Tool") and v.Name ~= "[Wallet]" then
+            v.Parent = backpack
         end
     end
+
+    local walletInBackpack = backpack:FindFirstChild("[Wallet]")
+    local walletInCharacter = character:FindFirstChild("[Wallet]")
+
+    -- Toggle wallet equip
+    if walletInBackpack then
+        walletInBackpack.Parent = character  -- Equip
+    elseif walletInCharacter then
+        walletInCharacter.Parent = backpack  -- Unequip
+    end
+end
+
 
     local advertising = false
     altCommands.advert = function(player, args)
